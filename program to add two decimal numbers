@@ -1,8 +1,8 @@
 #include<stdio.h>
 void main()
-{ double x,y; double z=0;   // basic declaration of the two decimals 
+{ double x,y; double z=0;    
 scanf("%lf",&x);
-scanf("%lf",&y);      // inputting two double variables
+scanf("%lf",&y);      
 z=x+y; // summing two varibles 
 printf("%lf",z);}
 
