@@ -1,9 +1,9 @@
 #include<stdio.h>
 void main()
-{ double x,y; double z=0;
+{ double x,y; double z=0; // basic declaration of the two decimals 
 scanf("%lf",&x);
-scanf("%lf",&y);
-z=x+y;
+scanf("%lf",&y);// inputting two double variables
+z=x+y; // summing two varibles 
 printf("%lf",z);}
 
 
