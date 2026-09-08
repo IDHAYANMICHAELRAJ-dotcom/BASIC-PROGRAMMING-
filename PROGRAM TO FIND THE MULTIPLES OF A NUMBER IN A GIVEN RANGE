@@ -1,1 +1,21 @@
-
+#include <stdio.h>
+void main()
+{ int a,b,c;
+ printf("Enter the number whose multiples you want to find   ");
+ scanf("%d",&a);
+ printf("Enter the range of the multiples of the number that you want ");
+ scanf("%d\t%d",&b,&c);
+ if(b<c)
+ { printf("the mutiples of the number are = ");
+    for(int i=b;i<=c;i++)
+   { if(i%a==0)
+      { printf("%d\t",i);
+      }}}
+    else if(b==c)
+    { printf("The values for the range are the same number ");}
+    else 
+    { if(c<b)
+       { printf("The mutiples of the number are= ");
+        for(int i=c;i<=b;i++)
+           { if(i%a==0)
+             {  printf("%d\t",i);}}}}}
