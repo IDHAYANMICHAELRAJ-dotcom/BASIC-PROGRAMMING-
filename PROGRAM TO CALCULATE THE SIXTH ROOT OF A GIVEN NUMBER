@@ -1,0 +1,8 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{ double a;
+  scanf("%lf",&a);
+   double x=cbrt(a);
+   double y=sqrt(x);
+   printf("The sixth root of the given number is = %.20f",y);}
