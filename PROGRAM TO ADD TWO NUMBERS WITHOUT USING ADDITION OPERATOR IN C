@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{ int a,b,sum,carry,x,y;
+ scanf("%d %d",&a,&b);
+  
+  printf("The numbers you entered are:- %d %d",a,b);
+  do
+  { sum=a^b;
+    carry=(a&b)<<1;
+    a=sum;
+    b=carry;
+    }while(carry!=0); 
+    printf(" The sum of two numbers = %d",a);
+}
