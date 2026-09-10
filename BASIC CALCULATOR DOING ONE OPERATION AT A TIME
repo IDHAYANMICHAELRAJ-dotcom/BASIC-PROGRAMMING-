@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{ double a,b,x=0.0,y=0.0,z; int ch;
+  printf("ENTER THE NUMBERS TO BE OPERATED ON AND  ENTER YOUR CHOICE OF CALCULATOR \n 1-ADD\n 2-SUBTRACT \n 3-MULTIPLY \n 4-DIVIDE \n 5-SQUARE ROOT \n 6-CUBE ROOT \n");
+ scanf("%lf \n%lf\n%d",&a,&b,&ch);
+   switch(ch)
+   { case 1 :  x=a+b;
+             printf("%lf",x); break;
+     case 2 : if(a>b)
+                {  x=a-b;
+                printf("%lf ",x);}
+              else if(a<b)
+              { x=b-a;
+                printf("%lf",x);
+                }
+                else 
+                {printf("%lf",0.0);} break;
+    case 3:   x=a*b;
+             printf("%lf",x);
+             break;
+    case 4:  printf("check if you have entered digits in the correct order if correct press 1 , else press 0\n");
+                scanf("%lf",&z);
+                if(z==1)
+                { x=a/b;
+                 printf("%lf",x);}
+                else {
+              if(a>b)
+                {   x=a/b;
+                printf("%lf ",x);}
+              else if(a<b)
+              {  x=b/a;
+                printf("%lf",x);
+                }
+                else 
+                {printf("%lf",1.0);}} break;
+    case 5:  x=sqrt(a);
+             y=sqrt(b);
+             printf("%lf %lf",x,y);break;
+    case 6: x=cbrt(a);
+            y=cbrt(b);
+            printf("%lf %lf",x,y);break;
+    default: printf(" Invalid Choice Enter valid choice");break;
+   }}
