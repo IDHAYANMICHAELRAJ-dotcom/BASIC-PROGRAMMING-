@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{ double x,fact=1.0;int i=0;
+  scanf("%lf",&x);
+  while(x!=0)
+  { i++;
+    fact=fact*i;
+    x--;
+    }
+    printf("%lf",fact);
+}
