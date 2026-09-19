@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{ double x,fact=1.0;int i=1;
+  scanf("%lf",&x);
+  for(i=1;i<=x;i++)
+  { fact=fact*i;
+  }
+  printf("%lf",fact);
+}
