@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{ int n;int rev=0,d=0,orig=0;
+  printf("The number to be Reversed"); 
+ scanf("%d",&n); orig=n;
+ while(n!=0)
+ { d=n%10;
+   n=n/10;
+   rev=rev*10+d;
+     }
+     if(orig==rev)
+     printf("It is a Palindrome Number");
+     else 
+     printf("It is Not a Palindrome Number");
+     }
+     
+      
+    
